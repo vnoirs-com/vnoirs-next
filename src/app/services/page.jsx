@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import {
   MessageSquare,
@@ -6,15 +5,13 @@ import {
   Server,
   Layers,
   Cpu,
-  Sparkles,
   ArrowRight,
   CheckCircle,
-  Database,
   ShieldCheck,
   Zap,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Services | WhatsApp Cloud API & Custom Web Engineering | Vnoirs",
   description:
     "Explore Vnoirs' core offerings: WhatsApp Cloud API integrations, custom Next.js web applications, API engineering, UI/UX systems, and cloud infrastructure.",
@@ -49,16 +46,16 @@ const SERVICES_DETAILED = [
     icon: Code2,
     badge: "Core Engineering",
     description:
-      "Modern web applications engineered with Next.js 15, React 19, and TypeScript. We eliminate boilerplate templates in favor of tailored software that delivers sub-second page loads, flawless SEO, and effortless scalability.",
+      "Modern web applications engineered with Next.js 15, React 19, and modern JavaScript. We eliminate boilerplate templates in favor of tailored software that delivers sub-second page loads, flawless SEO, and effortless scalability.",
     capabilities: [
       "Next.js App Router with Server-Side Rendering (SSR) & Static Generation",
-      "Type-safe architectures with end-to-end TypeScript validation",
+      "Component architectures with structured runtime validation",
       "Modern responsive styling using Tailwind CSS with glassmorphic accents",
       "Role-based authentication & secure session management",
       "Integration with third-party payment gateways and external APIs",
       "Full ownership of the clean, documented codebase",
     ],
-    technologies: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "Zod"],
+    technologies: ["Next.js 15", "React 19", "JavaScript (ESM)", "Tailwind CSS", "Zod"],
   },
   {
     id: "api",

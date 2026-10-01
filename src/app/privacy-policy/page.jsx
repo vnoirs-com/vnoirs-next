@@ -1,19 +1,13 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import {
   ShieldCheck,
   Lock,
-  FileText,
   Mail,
   Phone,
   CheckCircle2,
-  AlertCircle,
-  EyeOff,
-  Server,
   Sparkles,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Privacy & Data Policy | Vnoirs WhatsApp Cloud API & Web Services",
   description:
     "Official Privacy Policy of Vnoirs explaining data collection, WhatsApp Cloud API webhook processing, Meta Business compliance, and data subject rights.",

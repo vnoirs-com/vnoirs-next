@@ -1,15 +1,14 @@
-import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export const viewport: Viewport = {
+export const viewport = {
   themeColor: "#090d16",
   width: "device-width",
   initialScale: 1,
 };
 
-export const metadata: Metadata = {
+export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://vnoirs.com"),
   title: {
     default: "Vnoirs | Custom Web Solutions & WhatsApp Cloud API Integrations",
@@ -70,7 +69,12 @@ export const metadata: Metadata = {
     images: ["/banner-image.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "32x32" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
   },
 };
 
@@ -109,11 +113,7 @@ const jsonLd = {
   ],
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>

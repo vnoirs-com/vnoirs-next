@@ -1,9 +1,7 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Code2,
   Cpu,
-  Layers,
   ShieldCheck,
   Terminal,
   Workflow,
@@ -12,7 +10,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "About Vnoirs | Custom Web Solutions & Messaging Infrastructure",
   description:
     "Learn about Vnoirs, our engineering philosophy, architectural standards, and mission to deliver custom web systems and enterprise WhatsApp Cloud API solutions.",
@@ -45,7 +43,7 @@ const PILLARS = [
 ];
 
 const TECH_STACK = [
-  { category: "Frontend Frameworks", items: ["Next.js 15 (App Router)", "React 19", "TypeScript", "Tailwind CSS"] },
+  { category: "Frontend Frameworks", items: ["Next.js 15 (App Router)", "React 19", "JavaScript (ESM)", "Tailwind CSS"] },
   { category: "Backend & Messaging", items: ["WhatsApp Cloud API", "Node.js", "Serverless Edge Functions", "Resend API"] },
   { category: "Infrastructure & CI/CD", items: ["Vercel Edge Network", "AWS", "Docker", "Git Automated Pipelines"] },
   { category: "Security & Standards", items: ["GDPR Principles", "Webhook Signatures", "End-to-End Encryption", "Zero Bloat"] },
@@ -111,7 +109,7 @@ export default function AboutPage() {
 
               <div className="space-y-4">
                 {[
-                  "Clean, modular TypeScript with strict type checking",
+                  "Clean, modular modern JavaScript with strict design patterns",
                   "Fast server-side rendering (SSR) and edge-based caching",
                   "Direct integration with official Meta Graph & WhatsApp Cloud APIs",
                   "Automated form processing & Resend transactional notification dispatch",

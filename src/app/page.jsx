@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -16,7 +15,7 @@ import {
 } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Vnoirs | Cutting-Edge Web Solutions & WhatsApp Cloud API",
   description:
     "Vnoirs crafts high-performance custom web applications, scalable software architectures, and automated WhatsApp Cloud API business messaging systems.",
@@ -191,7 +190,7 @@ export default function HomePage() {
                   },
                   {
                     title: "Modern Jamstack & Serverless Stack",
-                    desc: "Leveraging Next.js App Router, React 19, TypeScript, and edge runtimes for maximal uptime.",
+                    desc: "Leveraging Next.js App Router, React 19, and edge runtimes for maximal uptime.",
                   },
                   {
                     title: "Transparent & Direct Communication",
@@ -224,7 +223,7 @@ export default function HomePage() {
                     <div className="w-3 h-3 rounded-full bg-amber-500/80" />
                     <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
                   </div>
-                  <span className="text-xs text-violet-400 font-mono">vnoirs-architecture.ts</span>
+                  <span className="text-xs text-violet-400 font-mono">vnoirs-architecture.js</span>
                 </div>
 
                 <div className="py-6 space-y-4 font-mono text-xs sm:text-sm">
@@ -237,7 +236,7 @@ export default function HomePage() {
                       messaging: <span className="text-emerald-400">&quot;WhatsApp Cloud API&quot;</span>,
                     </div>
                     <div>
-                      frontend: <span className="text-emerald-400">&quot;Next.js 15 (React 19 + TypeScript)&quot;</span>,
+                      frontend: <span className="text-emerald-400">&quot;Next.js 15 (React 19 + JavaScript)&quot;</span>,
                     </div>
                     <div>
                       styling: <span className="text-emerald-400">&quot;Tailwind CSS Modern Styling&quot;</span>,

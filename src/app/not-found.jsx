@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Home, MessageSquare } from "lucide-react";
+import { Home, MessageSquare } from "lucide-react";
 
 export default function NotFound() {
   return (

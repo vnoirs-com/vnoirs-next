@@ -10,7 +10,7 @@ const contactSchema = z.object({
   message: z.string().min(10, "Message must be at least 10 characters").max(3000),
 });
 
-export async function POST(req: Request) {
+export async function POST(req) {
   try {
     const body = await req.json();
 

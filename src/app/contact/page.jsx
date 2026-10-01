@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import {
   Mail,
   Phone,
@@ -11,7 +10,7 @@ import {
 } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Contact Us | Vnoirs Engineering & WhatsApp Cloud API Support",
   description:
     "Get in touch with Vnoirs for custom web development, Next.js applications, and official WhatsApp Cloud API integrations. Email cs@vnoirs.com or WhatsApp +92 320 2453000.",

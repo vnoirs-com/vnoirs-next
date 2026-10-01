@@ -1,4 +1,4 @@
-# Vnoirs — Next.js Enterprise Edition
+# Vnoirs — Next.js Enterprise Edition (JavaScript)
 
 High-performance, modern Next.js 15 web application for **Vnoirs** (`vnoirs.com`). Features full **WhatsApp Cloud API** solutions showcase, custom web engineering services, server-side Resend email workflows, dynamic SEO metadata, and zero fake profiles or mock portfolios.
 
@@ -6,10 +6,11 @@ High-performance, modern Next.js 15 web application for **Vnoirs** (`vnoirs.com`
 
 ## ⚡ Tech Stack
 
-* **Framework:** Next.js 15 (App Router with React 19 & TypeScript)
+* **Framework:** Next.js 15 (App Router with React 19 & JavaScript ESM)
 * **Styling:** Tailwind CSS with custom glassmorphic glow utilities and responsive mobile navigation
 * **Icons:** Lucide React
 * **Email System:** Official Resend SDK (`resend`) with responsive HTML templates & Zod validation
+* **Branded Favicon:** Dual SVG dynamic app icon (`icon.svg`) + `favicon.ico` / `favicon.svg`
 * **SEO & Metadata:** Dynamic OpenGraph, Twitter cards, JSON-LD Schema (`Organization`, `WebSite`), `sitemap.xml`, and `robots.txt`
 
 ---
@@ -19,6 +20,8 @@ High-performance, modern Next.js 15 web application for **Vnoirs** (`vnoirs.com`
 ```text
 vnoirs-next/
 ├── public/
+│   ├── favicon.ico          # Multi-resolution ICO favicon
+│   ├── favicon.svg          # Scalable vector favicon
 │   ├── banner-image.jpg     # High-resolution hero banner
 │   └── grid-pattern.svg     # SVG pattern backdrop
 ├── src/
@@ -28,21 +31,26 @@ vnoirs-next/
 │   │   ├── services/        # WhatsApp Cloud API & custom development solutions
 │   │   ├── contact/         # Interactive contact desk & FAQ
 │   │   ├── privacy-policy/  # Official Meta/WhatsApp compliance policy
-│   │   ├── not-found.tsx    # Branded 404 page
-│   │   ├── robots.ts        # Dynamic robots.txt
-│   │   ├── sitemap.ts       # Dynamic sitemap.xml
-│   │   ├── layout.tsx       # Root layout + JSON-LD Schema
-│   │   ├── page.tsx         # Hero, capabilities, workflow & live contact
+│   │   ├── icon.svg         # App Router native branded favicon
+│   │   ├── not-found.jsx    # Branded 404 page
+│   │   ├── robots.js        # Dynamic robots.txt
+│   │   ├── sitemap.js       # Dynamic sitemap.xml
+│   │   ├── layout.jsx       # Root layout + JSON-LD Schema + favicon links
+│   │   ├── page.jsx         # Hero, capabilities, workflow & live contact
 │   │   └── globals.css      # Styling & glassmorphism utilities
 │   ├── components/
-│   │   ├── Navbar.tsx       # Responsive header with mobile drawer
-│   │   ├── Footer.tsx       # Footer with contact links & capabilities
-│   │   └── ContactForm.tsx  # Resend-integrated contact form with honeypot
+│   │   ├── Navbar.jsx       # Responsive header with mobile drawer
+│   │   ├── Footer.jsx       # Footer with contact links & capabilities
+│   │   └── ContactForm.jsx  # Resend-integrated contact form with honeypot
 │   └── lib/
-│       ├── resend.ts        # Resend SDK client instance
-│       └── utils.ts         # Class name merge utilities
+│       ├── resend.js        # Resend SDK client instance
+│       └── utils.js         # Class name merge utilities
 ├── .env.example             # Configuration reference
 ├── .env.local               # Local secrets (RESEND_API_KEY)
+├── jsconfig.json            # Path alias configuration (@/* -> ./src/*)
+├── next.config.mjs          # Next.js configuration
+├── postcss.config.mjs       # PostCSS Tailwind configuration
+├── tailwind.config.mjs      # Tailwind CSS configuration
 └── package.json
 ```
 

@@ -3,17 +3,8 @@
 import { useState } from "react";
 import { Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 
-interface FormDataState {
-  name: string;
-  email: string;
-  phone: string;
-  service: string;
-  message: string;
-  botCheck: string; // Honeypot field
-}
-
 export default function ContactForm() {
-  const [formData, setFormData] = useState<FormDataState>({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
@@ -22,17 +13,15 @@ export default function ContactForm() {
     botCheck: "",
   });
 
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState("idle"); // idle | loading | success | error
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Check honeypot
@@ -75,7 +64,7 @@ export default function ContactForm() {
         message: "",
         botCheck: "",
       });
-    } catch (err: unknown) {
+    } catch (err) {
       setStatus("error");
       if (err instanceof Error) {
         setErrorMessage(err.message);
