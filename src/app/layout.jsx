@@ -1,7 +1,7 @@
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-
+import SiteLayoutWrapper from "@/components/SiteLayoutWrapper";
+import { AuthProvider } from "@/context/AuthContext";
+import { GoogleAnalytics } from "@next/third-parties/google";
 export const viewport = {
   themeColor: "#090d16",
   width: "device-width",
@@ -9,7 +9,9 @@ export const viewport = {
 };
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://vnoirs.com"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://vnoirs.com",
+  ),
   title: {
     default: "Vnoirs | Custom Web Solutions & WhatsApp Cloud API Integrations",
     template: "%s | Vnoirs",
@@ -114,6 +116,7 @@ const jsonLd = {
 };
 
 export default function RootLayout({ children }) {
+  const GAID = process.env.GAID;
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
@@ -122,10 +125,11 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-[#090d16] text-gray-100 antialiased selection:bg-violet-600 selection:text-white">
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+      <body className="antialiased">
+        <AuthProvider>
+          <SiteLayoutWrapper>{children}</SiteLayoutWrapper>
+          <GoogleAnalytics gaId={GAID} />
+        </AuthProvider>
       </body>
     </html>
   );

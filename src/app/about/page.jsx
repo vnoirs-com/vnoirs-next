@@ -97,6 +97,15 @@ export default function AboutPage() {
                 <p>
                   We don&apos;t rely on anonymous freelancers or cookie-cutter template marketplaces. Every project is scoped, engineered, and maintained by experienced software professionals who value clean code, transparent timelines, and measurable client success.
                 </p>
+                <div className="pt-2">
+                  <Link
+                    href="/team"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-violet-400 hover:text-violet-300 transition"
+                  >
+                    <span>Meet our founder & core engineering leadership</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
             </div>
 

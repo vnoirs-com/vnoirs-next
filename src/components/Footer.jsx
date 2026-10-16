@@ -45,6 +45,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/team" className="hover:text-violet-400 transition">
+                  Team & Leadership
+                </Link>
+              </li>
+              <li>
+                <Link href="/careers" className="hover:text-violet-400 transition">
+                  Careers & Openings
+                </Link>
+              </li>
+              <li>
                 <Link href="/services" className="hover:text-violet-400 transition">
                   Services & Solutions
                 </Link>
@@ -57,6 +67,16 @@ export default function Footer() {
               <li>
                 <Link href="/privacy-policy" className="hover:text-violet-400 transition">
                   Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms-of-service" className="hover:text-violet-400 transition">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link href="/data-deletion" className="hover:text-violet-400 transition">
+                  Data Deletion Request
                 </Link>
               </li>
             </ul>
@@ -133,9 +153,15 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
           <p>© {currentYear} Vnoirs. All rights reserved.</p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-4 sm:gap-6 items-center">
             <Link href="/privacy-policy" className="hover:text-gray-400 transition">
               Privacy & Data Policy
+            </Link>
+            <Link href="/terms-of-service" className="hover:text-gray-400 transition">
+              Terms of Service
+            </Link>
+            <Link href="/data-deletion" className="hover:text-gray-400 transition">
+              Data Deletion
             </Link>
             <Link href="/contact" className="hover:text-gray-400 transition">
               Client Support

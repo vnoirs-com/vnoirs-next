@@ -1,0 +1,139 @@
+[
+  {
+    "id": "whatsapp-cloud-api-lead",
+    "title": "Lead WhatsApp Cloud API Engineer",
+    "department": "Backend & Messaging",
+    "location": "Remote / Hybrid (PKT)",
+    "type": "Full-Time",
+    "experience": "3+ Years",
+    "salary": "Market Competitive + Milestones",
+    "postedDate": "October 2026",
+    "status": "expired",
+    "summary": "Architect and scale mission-critical Meta WhatsApp Business Cloud API workflows, webhook microservices, high-throughput message dispatchers, and CRM integrations for enterprise clients.",
+    "responsibilities": [
+      "Design, implement, and maintain high-throughput webhook listener pipelines using Node.js, Next.js API routes, and Redis queue workers.",
+      "Build interactive WhatsApp conversational flows (quick replies, catalog messages, call-to-action buttons, multi-agent ticket assignment).",
+      "Ensure strict compliance with Meta Graph API rate limits, message template approval processes, and GDPR data minimization standards.",
+      "Integrate WhatsApp messaging engines with client relational databases (PostgreSQL, Supabase) and external ERPs.",
+      "Monitor webhook delivery health, retry policies, and automated incident failovers 24/7."
+    ],
+    "requirements": [
+      "Demonstrated production experience with Meta WhatsApp Cloud API / Graph API v18+.",
+      "Strong proficiency in JavaScript/Node.js, asynchronous stream processing, and RESTful architectures.",
+      "Experience with webhook validation, HMAC-SHA256 signature verification, and idempotency keys.",
+      "Familiarity with Redis, PostgreSQL, or Supabase for distributed message queuing and state tracking.",
+      "Excellent technical communication and debugging skills."
+    ],
+    "tags": [
+      "WhatsApp Cloud API",
+      "Meta Graph API",
+      "Node.js",
+      "Webhooks",
+      "PostgreSQL",
+      "Supabase"
+    ],
+    "createdAt": "2026-10-02T00:55:02.230664+00:00"
+  },
+  {
+    "id": "senior-fullstack-nextjs",
+    "title": "Senior Full-Stack Next.js Engineer",
+    "department": "Web Engineering",
+    "location": "Remote",
+    "type": "Full-Time",
+    "experience": "4+ Years",
+    "salary": "Market Competitive",
+    "postedDate": "October 2026",
+    "status": "expired",
+    "summary": "Spearhead the development of bespoke, ultra-fast web applications, Jamstack platforms, and SaaS interfaces utilizing Next.js 15, React 19, and modern Tailwind CSS architectures.",
+    "responsibilities": [
+      "Build high-performance web applications with Next.js App Router, React Server Components (RSC), and edge runtimes.",
+      "Craft bespoke UI components and responsive layouts adhering to strict accessibility (WCAG 2.1) and zero-bloat standards.",
+      "Engineer secure serverless endpoints, authentication mechanisms, and transactional notification pipelines (Resend API).",
+      "Conduct code reviews, mentor junior developers, and establish CI/CD automated test suites.",
+      "Optimize Core Web Vitals to achieve 95+ Google Lighthouse scores across all desktop and mobile targets."
+    ],
+    "requirements": [
+      "Extensive production experience with Next.js (App Router), React 19, and modern JavaScript (ESM).",
+      "Proficiency in Tailwind CSS, responsive utility styling, and state management patterns.",
+      "Solid understanding of SSR, SSG, ISR, streaming, and edge caching mechanisms.",
+      "Hands-on experience with REST/GraphQL APIs, Zod runtime validation, and third-party SDK integrations.",
+      "Passion for clean code, semantic HTML, and intuitive developer documentation."
+    ],
+    "tags": [
+      "Next.js 15",
+      "React 19",
+      "JavaScript",
+      "Tailwind CSS",
+      "Resend API",
+      "Vercel"
+    ],
+    "createdAt": "2026-10-02T00:55:02.230664+00:00"
+  },
+  {
+    "id": "cloud-devops-engineer",
+    "title": "Cloud Infrastructure & DevOps Specialist",
+    "department": "Cloud & Reliability",
+    "location": "Remote",
+    "type": "Full-Time / Contract",
+    "experience": "3+ Years",
+    "salary": "Competitive Hourly / Monthly",
+    "postedDate": "October 2026",
+    "status": "expired",
+    "summary": "Own the deployment pipelines, serverless infrastructure, observability stack, and edge network configurations that power Vnoirs' web apps and messaging APIs.",
+    "responsibilities": [
+      "Set up and maintain automated GitHub Actions CI/CD workflows for preview and production environments.",
+      "Configure global CDN edge distributions, DNS routing, and SSL certifications on Vercel, AWS, and Cloudflare.",
+      "Implement real-time error tracking, logging dashboards, and automated uptime alerts.",
+      "Manage Docker containerization and staging environments for backend microservices.",
+      "Collaborate with security advisors to conduct vulnerability audits and enforce TLS 1.3 standards."
+    ],
+    "requirements": [
+      "Proven track record managing cloud infrastructure on AWS, Vercel, or GCP.",
+      "Experience with GitHub Actions CI/CD, Docker, and infrastructure-as-code principles.",
+      "Knowledge of network security, DDoS mitigation (Cloudflare), and rate-limiting strategies.",
+      "Familiarity with serverless database scaling (Supabase, Neon, AWS RDS)."
+    ],
+    "tags": [
+      "DevOps",
+      "GitHub Actions",
+      "Vercel",
+      "AWS",
+      "Docker",
+      "Cloudflare",
+      "Supabase"
+    ],
+    "createdAt": "2026-10-02T00:55:02.230664+00:00"
+  },
+  {
+    "id": "uiux-product-designer",
+    "title": "UI/UX Product Designer & Design Systems",
+    "department": "Product & Design",
+    "location": "Remote",
+    "type": "Contract / Full-Time",
+    "experience": "2+ Years",
+    "salary": "Competitive",
+    "postedDate": "October 2026",
+    "status": "expired",
+    "summary": "Shape the visual identity and user experience for modern digital products, client client portals, and interactive WhatsApp chat widgets.",
+    "responsibilities": [
+      "Create high-fidelity interactive Figma prototypes, design systems, and component libraries.",
+      "Design striking dark-mode and glassmorphic UI patterns that align with modern tech brand guidelines.",
+      "Map intuitive customer onboarding flows, transactional dashboard views, and mobile responsive states.",
+      "Collaborate directly with frontend engineers to ensure pixel-perfect CSS implementation."
+    ],
+    "requirements": [
+      "Strong portfolio demonstrating modern web application designs, landing pages, or SaaS dashboards.",
+      "Expertise in Figma (auto-layout, components, variants, token architecture).",
+      "Understanding of HTML/CSS capabilities and mobile-first design principles.",
+      "Keen eye for typography, micro-interactions, contrast ratios, and conversion optimization."
+    ],
+    "tags": [
+      "Figma",
+      "UI/UX",
+      "Design Systems",
+      "Conversion Optimization",
+      "Prototyping"
+    ],
+    "createdAt": "2026-10-02T00:55:02.230664+00:00"
+  }
+]

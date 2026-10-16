@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   ShieldCheck,
   Lock,
@@ -5,6 +6,8 @@ import {
   Phone,
   CheckCircle2,
   Sparkles,
+  HelpCircle,
+  ArrowRight,
 } from "lucide-react";
 
 export const metadata = {
@@ -196,7 +199,7 @@ export default function PrivacyPolicyPage() {
                 <li>&bull; <strong className="text-white">Right to Restrict Processing:</strong> Request suspension of processing activities.</li>
               </ul>
               <p className="text-xs text-gray-400 mt-2">
-                To exercise any of these rights, email our Data Desk at <a href="mailto:cs@vnoirs.com" className="text-violet-400 hover:underline">cs@vnoirs.com</a> with the subject line &quot;Data Subject Request&quot;. We honor verified requests within 48 business hours.
+                To submit an instant automated deletion request in compliance with Meta Platform Terms, visit our <Link href="/data-deletion" className="text-violet-400 underline font-semibold">User Data Deletion Request Page</Link>, or email our Data Desk at <a href="mailto:cs@vnoirs.com" className="text-violet-400 hover:underline">cs@vnoirs.com</a> with the subject line &quot;Data Subject Request&quot;. Verified requests are processed within 24 to 48 business hours.
               </p>
             </div>
 
@@ -227,6 +230,37 @@ export default function PrivacyPolicyPage() {
                 <div className="text-xs text-gray-500 pt-2 border-t border-white/5">
                   Vnoirs &bull; Web Solutions & Official WhatsApp Cloud API Messaging Systems &bull; https://vnoirs.com
                 </div>
+              </div>
+            </div>
+
+            {/* Bottom Related Navigation */}
+            <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+              <div className="flex items-center gap-2 text-gray-400">
+                <HelpCircle className="w-4 h-4 text-violet-400" />
+                <span>Looking for our contractual and service agreements?</span>
+              </div>
+              <div className="flex items-center gap-4">
+                <Link
+                  href="/terms-of-service"
+                  className="text-violet-400 hover:text-violet-300 font-semibold"
+                >
+                  Terms of Service
+                </Link>
+                <span className="text-white/20">&bull;</span>
+                <Link
+                  href="/data-deletion"
+                  className="text-violet-400 hover:text-violet-300 font-semibold"
+                >
+                  Data Deletion
+                </Link>
+                <span className="text-white/20">&bull;</span>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-1 text-white hover:text-violet-400 font-semibold transition"
+                >
+                  <span>Contact Our Team</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
               </div>
             </div>
           </div>

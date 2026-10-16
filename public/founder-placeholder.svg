@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" fill="none">
+  <defs>
+    <linearGradient id="founder-bg" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="founder-accent" x1="50" y1="50" x2="350" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" rx="32" fill="url(#founder-bg)" stroke="#7c3aed" stroke-width="2" stroke-opacity="0.3"/>
+
+  <!-- Subtle grid lines -->
+  <circle cx="200" cy="200" r="140" stroke="#6366f1" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="4 4" />
+  <circle cx="200" cy="200" r="180" stroke="#8b5cf6" stroke-width="1" stroke-opacity="0.1" />
+
+  <!-- Stylized Portrait Silhouette -->
+  <!-- Head -->
+  <circle cx="200" cy="145" r="55" fill="url(#founder-accent)" fill-opacity="0.85" />
+  
+  <!-- Shoulders & Body -->
+  <path d="M100 320 C100 240, 140 220, 200 220 C260 220, 300 240, 300 320 Z" fill="url(#founder-accent)" fill-opacity="0.75" />
+
+  <!-- Code / Monogram Badge overlay at bottom right -->
+  <circle cx="295" cy="295" r="30" fill="#090d16" stroke="#8b5cf6" stroke-width="2"/>
+  <path d="M285 290L290 300L295 290M300 292H308" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
